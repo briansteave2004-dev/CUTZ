@@ -382,7 +382,81 @@ select:focus {
    Clicking a nav link opens its popup; Close or a click
    outside the box closes it.
    ========================================================== */
+   /* purple like your design; use #ff7a1a for CUTZ orange */
 <footer>
+   :root {
+  --accent: #c44fd6;      /* purple like your design; use #ff7a1a for CUTZ orange */
+  --text: #ffffff;
+  --muted: #9a9a9a;
+}
+
+/* Headings */
+.footer-col h4 {
+  margin: 0 0 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.footer-col h4.footer-sub { margin-top: 36px; }
+
+/* Shared icon style (stroke only) */
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Social circles */
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.footer-social a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Contact list */
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-contact .icon { color: var(--accent); }
+.footer-contact a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+}
+.footer-contact a.muted { color: var(--muted); }
+.footer-contact a:hover { color: var(--accent); }
    <div class="footer-bottom">
     <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
   </div>
