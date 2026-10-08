@@ -503,3 +503,16 @@ footer {
   color: #fff;
   transform: scale(1.1);
 }
+.footer {
+/* ==========================================================
+   POPUPS (About, Services, Work, Contact)
+   Clicking a nav link opens its popup; Close or a click
+   outside the box closes it.
+   ========================================================== */
+   /* purple like your design; use #ff7a1a for CUTZ orange */
+<footer>
+   <div class="footer-bottom">
+    <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
+  </div>
+</footer>
+   }
