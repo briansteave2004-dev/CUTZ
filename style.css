@@ -403,60 +403,33 @@ select:focus {
 
 /* Shared icon style (stroke only) */
 .icon {
-  width: 16px;
-  height: 16px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
 }
 
-/* Social circles */
+/* Social circles (were 44px) */
 .footer-social {
-  display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 .footer-social a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text);
-  display: grid;
-  place-items: center;
-  transition: border-color 0.2s, color 0.2s, transform 0.2s;
-}
-.footer-social a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
+  width: 32px;
+  height: 32px;
 }
 
 /* Contact list */
 .footer-contact {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.footer-contact li {
-  display: flex;
-  align-items: center;
   gap: 12px;
 }
-.footer-contact .icon { color: var(--accent); }
-.footer-contact a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 15px;
+.footer-contact li {
+  gap: 10px;
 }
-.footer-contact a.muted { color: var(--muted); }
-.footer-contact a:hover { color: var(--accent); }
+.footer-contact .icon {
+  width: 13px;
+  height: 13px;
+}
+.footer-contact a {
+  font-size: 14px;
+}
    <div class="footer-bottom">
     <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
   </div>
