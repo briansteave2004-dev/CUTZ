@@ -168,6 +168,12 @@ h1 + p {
   background-repeat: no-repeat;
   opacity: 0.3;          /* change this: 0.1 = very faint, 0.5 = stronger */
   z-index: 0;
+/* your text stays on top, fully visible */
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
 }
 
 /* If you don't use .container yet, give the page comfortable side padding */
