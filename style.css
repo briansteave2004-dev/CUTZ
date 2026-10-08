@@ -470,7 +470,7 @@ select:focus {
   position: relative;          /* lets the icons sit on the left */
   padding: 20px;
 }
-
+icons
 footer {
   position: relative;
   padding: 20px;
@@ -478,7 +478,7 @@ footer {
 
 .footer-social {
   position: absolute;
-  right: 20px;
+  left: 20px;                  /* left side instead of right */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
