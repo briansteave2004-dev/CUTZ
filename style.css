@@ -520,7 +520,6 @@ footer {
 .popup-box a {
   display: block;
   padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .popup-box a:hover {
@@ -536,8 +535,7 @@ footer {
 /* Items inside Services and Work popups */
 .popup-item {
   padding: 1rem 0;
-  border-bottom: 1px solid var(--line);
-}
+ 
 
 .popup-item h3 {
   font-size: 1.1rem;
