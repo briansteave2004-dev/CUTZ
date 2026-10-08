@@ -147,6 +147,28 @@ h1 + p {
 .section {
   padding-block: clamp(4rem, 9vw, 8rem);
 }
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: #050505;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+/* the faded background image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("hero-image.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  opacity: 0.3;          /* change this: 0.1 = very faint, 0.5 = stronger */
+  z-index: 0;
+}
 
 /* If you don't use .container yet, give the page comfortable side padding */
 body > main,
