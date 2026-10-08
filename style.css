@@ -384,52 +384,6 @@ select:focus {
    ========================================================== */
    /* purple like your design; use #ff7a1a for CUTZ orange */
 <footer>
-   :root {
-  --accent: #c44fd6;      /* purple like your design; use #ff7a1a for CUTZ orange */
-  --text: #ffffff;
-  --muted: #9a9a9a;
-}
-
-/* Headings */
-.footer-col h4 {
-  margin: 0 0 20px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.footer-col h4.footer-sub { margin-top: 36px; }
-
-/* Shared icon style (stroke only) */
-.icon {
-  width: 12px;
-  height: 12px;
-}
-
-/* Social circles (were 44px) */
-.footer-social {
-  gap: 8px;
-}
-.footer-social a {
-  width: 32px;
-  height: 32px;
-}
-
-/* Contact list */
-.footer-contact {
-  gap: 12px;
-}
-.footer-contact li {
-  gap: 10px;
-}
-.footer-contact .icon {
-  width: 13px;
-  height: 13px;
-}
-.footer-contact a {
-  font-size: 14px;
-}
    <div class="footer-bottom">
     <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
   </div>
