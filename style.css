@@ -175,7 +175,25 @@ h1 + p {
   z-index: 1;
   max-width: 700px;
 }
+.hero {
+  justify-content: flex-start;   /* pushes content to the left */
+  text-align: left;
+  padding-left: 120px;           /* space from the left edge */
+}
 
+.hero-content {
+  margin: 0;                     /* removes auto-centering */
+  text-align: left;
+  align-items: flex-start;
+  max-width: 800px;
+}
+
+/* keeps the two buttons on the left too */
+.hero-content .buttons,
+.hero-buttons,
+.hero-content .btn-group {
+  justify-content: flex-start;
+}
 /* If you don't use .container yet, give the page comfortable side padding */
 body > main,
 body > section,
