@@ -158,7 +158,7 @@ h1 + p {
 }
 
 /* the faded background image */
-.hero:: {
+.hero:before {
   content: "";
   position: absolute;
   inset: 0;
