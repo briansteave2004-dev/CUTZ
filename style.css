@@ -467,7 +467,7 @@ select:focus {
   font-size: 0.95rem;
 }
    footer {
-  position: relative;          /* lets the icons sit on the right */
+  position: relative;          /* lets the icons sit on the left */
   padding: 20px;
 }
 
