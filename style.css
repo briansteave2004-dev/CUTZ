@@ -465,11 +465,72 @@ footer {
    Clicking a nav link opens its popup; Close or a click
    outside the box closes it.
    ========================================================== */
-.footer-logo {
-  height: 26px;
-  width: auto;
-  margin-bottom: 1rem;
-}
+<footer>
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <img class="footer-logo" src="logo.png" alt="CUTZ by Quadrillion">
+      <p>We are a creative digital agency helping brands tell their story through powerful visuals and smart marketing.</p>
+    </div>
+
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Social Media Marketing</a></li>
+        <li><a href="#services">Branding &amp; Design</a></li>
+        <li><a href="#services">Video &amp; Content</a></li>
+        <li><a href="#services">Web Design</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Follow us</h4>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/YOUR_PAGE" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8"/></svg>
+        </a>
+        <a href="https://www.facebook.com/YOUR_PAGE" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M15 3.5h-2a4 4 0 0 0-4 4V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7.5a.5.5 0 0 1 .5-.5h2z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@YOUR_PAGE" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2.5 1.8 4 4.5 4.2"/></svg>
+        </a>
+      </div>
+
+      <h4 class="footer-sub">Get in touch</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <a href="mailto:hello@cutz.com">hello@cutz.com</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+94701260865">070 126 0865</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <a href="https://www.google.com/maps/place/Chitra+Ln,+Colombo+00500/@6.8901991,79.8684357,17z" target="_blank" rel="noopener">Chitra Lane, Colombo 00500</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
+  </div>
+</footer>
 
 .popup {
   display: none;
