@@ -559,7 +559,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   display: flex;
-  flex-direction: row;         /* horizontal line */
+  flex-direction: coloum;         /* horizontal line */
   gap: 14px;
 }
 
