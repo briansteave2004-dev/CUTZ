@@ -136,42 +136,23 @@ h1 + p {
   margin-inline: auto;
 }
 
+html, body{
+  margin:0;
+  padding:0;
+  width:100%;
+  overflow-x:hidden;
+}
+
 .hero{
+  width:100%;
+  max-width:none;      /* remove any max-width */
+  margin:0;            /* remove any side margin */
+  box-sizing:border-box;
   min-height:100svh;
+  padding-top:110px;   /* keeps the heading below your header */
   display:flex;
   align-items:center;
-  background:#050403 url('hero-image.png') right center / cover no-repeat;
-}
-.hero-content{
-  max-width:560px;
-  padding:0 clamp(20px,6vw,90px);
-}
-.hero h1{
-  margin:0 0 18px;
-  font-size:clamp(44px,7vw,96px);
-  line-height:.95;
-  color:#fff;
-  font-weight:800;
-}
-.hero p{
-  margin:0 0 28px;
-  color:#d8c9bb;
-  font-size:1.1rem;
-  line-height:1.5;
-}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-  padding:14px 26px;
-  border-radius:999px;
-  background:#ff7a1a;
-  color:#120a04;
-  font-weight:700;
-  text-decoration:none;
-}
-.btn-outline{
-  background:transparent;
-  color:#ffb066;
-  border:1.5px solid #ff7a1a;
+  background:#050403 url('hero-image.png') center / cover no-repeat;
 }
 /* If you don't use .container yet, give the page comfortable side padding */
 body > main,
