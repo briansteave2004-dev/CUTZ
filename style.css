@@ -465,11 +465,7 @@ footer {
    Clicking a nav link opens its popup; Close or a click
    outside the box closes it.
    ========================================================== */
-.footer-logo {
-  height: 26px;
-  width: auto;
-  margin-bottom: 1rem;
-}
+
 
 .popup {
   display: none;
