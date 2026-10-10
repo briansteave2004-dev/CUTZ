@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUTZ by Quadrillion</title>
+  <meta name="description" content="CUTZ is a creative digital agency helping brands grow through creativity and digital marketing.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="CUTZ by Quadrillion | Creative Digital Agency">
+  <meta property="og:description" content="We create. You grow. Social media management, branding, ads and videography.">
+  <meta property="og:image" content="hero-image.png">
+  <link rel="icon" href="icon.png">
+  <!-- Marks the page as JavaScript-enabled (popups switch to JS control) -->
+  <script>document.documentElement.className = 'js';</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ICON SPRITE (defined once, reused below) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <!-- Socials -->
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+    </symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="none" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+    </symbol>
+
+    <!-- Services -->
+    <symbol id="i-social" viewBox="0 0 24 24">
+      <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>
+      <path d="M12 8.5v6M9 11.5h6"/>
+    </symbol>
+    <symbol id="i-branding" viewBox="0 0 24 24">
+      <circle cx="13.5" cy="6.5" r="1"/>
+      <circle cx="17.5" cy="10.5" r="1"/>
+      <circle cx="8.5" cy="7.5" r="1"/>
+      <circle cx="6.5" cy="12.5" r="1"/>
+      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16c3.3 0 6-2.7 6-6 0-4.9-4.5-8.8-10-8.8z"/>
+    </symbol>
+    <symbol id="i-ads" viewBox="0 0 24 24">
+      <path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+      <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+    </symbol>
+    <symbol id="i-video" viewBox="0 0 24 24">
+      <rect x="2" y="6" width="14" height="12" rx="2"/>
+      <path d="M22 8l-6 4 6 4z"/>
+    </symbol>
+
+    <!-- UI -->
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 17L17 7M8 7h9v9"/>
+    </symbol>
+    <symbol id="i-send" viewBox="0 0 24 24">
+      <path d="M22 2L11 13"/>
+      <path d="M22 2l-7 20-4-9-9-4z"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M22 7l-10 6L2 7"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a class="logo" href="#top" aria-label="CUTZ by Quadrillion home">
+      <img src="logo.png" alt="CUTZ by Quadrillion">
+    </a>
+
+    <!-- Mobile menu button (hidden on desktop) -->
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <nav id="main-nav" aria-label="Main">
+      <ul>
+        <li class="mobile-only"><a href="#top" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta">
+          <a class="btn" href="#talk">Let&rsquo;s Talk <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO (animated background + your text on top) -->
+  <main class="hero" id="top">
+
+    <!-- Animated background: pieces fly in and assemble the hero picture.
+         Needs hero-image.png (1774 x 887) in the same folder. -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="stage">
+        <div class="world">
+          <div class="base" id="base"></div>
+          <div id="pieces"></div>
+          <div class="glow screen" id="g1"></div>
+          <div class="glow spot" id="g2"></div>
+          <div class="flash" id="flash"></div>
+          <canvas id="dust"></canvas>
+        </div>
+        <div class="vig"></div>
+      </div>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>WE CREATE.</h1>
+      <h1>YOU GROW.</h1>
+      <p>CUTZ is a creative digital agency helping brands grow through creativity and digital marketing.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#talk">Start a project</a>
+        <a class="btn btn-outline" href="#services">Our services</a>
+      </div>
+
+      <!-- Social links (replace the @yourpage URLs with your real pages) -->
+      <div class="socials hero-socials" aria-label="Follow CUTZ on social media">
+        <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+        <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+      </div>
+    </div>
+  </main>
+
+  <!-- SERVICES (on-page section with cards) -->
+  <section id="services" class="section services">
+    <div class="section-inner">
+      <h2>Our services</h2>
+      <p class="section-intro">Everything your brand needs to get noticed and keep growing.</p>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-social"/></svg></div>
+          <h3>Social Media Management</h3>
+          <p>Content, scheduling and community care that keep your pages active and growing.</p>
+          <a class="card-link" href="#talk" data-service="Social Media Management">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-branding"/></svg></div>
+          <h3>Branding</h3>
+          <p>Logos, visual identity and guidelines that make your brand easy to remember.</p>
+          <a class="card-link" href="#talk" data-service="Branding">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-ads"/></svg></div>
+          <h3>Ads</h3>
+          <p>Targeted paid campaigns that turn reach into enquiries and sales.</p>
+          <a class="card-link" href="#talk" data-service="Ads">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-video"/></svg></div>
+          <h3>Videography</h3>
+          <p>Cinematic videos and reels that bring your ideas to life.</p>
+          <a class="card-link" href="#talk" data-service="Videography">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LET'S TALK BAR (sits right before the footer) -->
+  <section class="talk-section" aria-labelledby="talk-title">
+    <div class="talk-bar">
+      <span class="talk-brush" aria-hidden="true"></span>
+
+      <h2 class="talk-title" id="talk-title">
+        Let&rsquo;s Create Something<br>
+        Extraordinary
+        <span class="talk-accent">
+          <span class="talk-accent-text">Together.</span>
+          <svg class="talk-underline" viewBox="0 0 180 12" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8 C 50 3, 115 3, 170 6 C 177 7, 180 9, 174 10"/>
+          </svg>
+        </span>
+      </h2>
+
+      <!-- Hand-drawn curve pointing to the button (desktop only) -->
+      <svg class="talk-curve" viewBox="0 0 1050 228" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M2 176 C 4 192, 24 200, 94 198 C 330 192, 520 160, 572 118 C 582 108, 620 108, 680 108 C 800 110, 940 122, 1046 126"/>
+        <path d="M1034 119 L1047 126 L1034 133"/>
+      </svg>
+
+      <a class="talk-btn" href="#talk">
+        <span>Let&rsquo;s Talk</span>
+        <span class="talk-btn-icon"><svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- LET'S TALK FORM (sends the message to WhatsApp) -->
+  <div id="talk" class="popup" role="dialog" aria-modal="true" aria-labelledby="talk-modal-title">
+    <div class="popup-bg" data-close></div>
+    <div class="popup-box talk-box">
+      <button class="modal-close" type="button" aria-label="Close" data-close>
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+
+      <h2 id="talk-modal-title">Let&rsquo;s Talk</h2>
+      <p class="talk-sub">Tell us a bit about your project and we&rsquo;ll be in touch.</p>
+
+      <!-- Change the WhatsApp number here (country code first, no + or spaces) -->
+      <form id="talk-form" class="talk-form" data-whatsapp="94701260865">
+        <label class="sr-only" for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+
+        <label class="sr-only" for="f-email">Your email</label>
+        <input id="f-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+
+        <label class="sr-only" for="f-phone">Phone (optional)</label>
+        <input id="f-phone" name="phone" type="tel" placeholder="Phone (optional)" autocomplete="tel">
+
+        <label class="sr-only" for="f-message">What are you looking to create?</label>
+        <textarea id="f-message" name="message" rows="4" placeholder="What are you looking to create?" required></textarea>
+
+        <button class="btn send-btn" type="submit">Send Message <svg class="icon icon-sm"><use href="#i-send"/></svg></button>
+        <small class="talk-note">This opens WhatsApp with your message ready to send.</small>
+      </form>
+    </div>
+  </div>
+
+  <!-- ABOUT POPUP -->
+  <div id="about" class="popup" role="dialog" aria-modal="true" aria-labelledby="about-title">
+    <a class="popup-bg" href="#top" aria-label="Close" data-close></a>
+    <div class="popup-box">
+      <h2 id="about-title">About CUTZ</h2>
+      <p>CUTZ is a creative digital agency by Quadrillion. We help brands stand out and grow through strong creative work and smart digital marketing.</p>
+      <p>Our team brings design, content and marketing together, so every campaign looks sharp and delivers results.</p>
+
+      <!-- Opens the team popup -->
+      <a class="btn btn-outline team-btn" href="#team">
+        <svg class="icon icon-sm"><use href="#i-users"/></svg> Meet our team
+      </a>
+
+      <a class="popup-close" href="#top" data-close>Close</a>
+    </div>
+  </div>
+
+  <!-- TEAM POPUP (opened from the About popup) -->
+  <div id="team" class="popup" role="dialog" aria-modal="true" aria-labelledby="team-title">
+    <a class="popup-bg" href="#top" aria-label="Close" data-close></a>
+    <div class="popup-box team-box">
+      <button class="modal-close" type="button" aria-label="Close" data-close>
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+
+      <h2 id="team-title">Meet our team</h2>
+      <p class="team-intro">The people behind every CUTZ campaign.</p>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <img class="team-photo photo-chiyan" src="chiyan.jpeg" alt="Chiyan Ashwin, Director and Founder" loading="lazy">
+          <div class="team-info">
+            <h3>Chiyan Ashwin</h3>
+            <p class="team-role">Director / Founder</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img class="team-photo photo-yohan" src="yohan.jpeg" alt="Yohan Gayle, Co-Director and Videographer" loading="lazy">
+          <div class="team-info">
+            <h3>Yohan Gayle</h3>
+            <p class="team-role">Co-Director / Videographer</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <img class="team-photo photo-brian" src="brian.jpeg" alt="Brian Steave, Creative Director and Social Media Specialist" loading="lazy">
+          <div class="team-info">
+            <h3>Brian Steave</h3>
+            <p class="team-role">Creative Director / Social Media Specialist</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="team-actions">
+        <a class="popup-close" href="#about">Back to About</a>
+        <a class="popup-close" href="#top" data-close>Close</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK POPUP -->
+  <div id="work" class="popup" role="dialog" aria-modal="true" aria-labelledby="work-title">
+    <a class="popup-bg" href="#top" aria-label="Close" data-close></a>
+    <div class="popup-box">
+      <h2 id="work-title">Our work</h2>
+      <div class="popup-item">
+        <h3>Project name one</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <div class="popup-item">
+        <h3>Project name two</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <div class="popup-item">
+        <h3>Project name three</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <a class="popup-close" href="#top" data-close>Close</a>
+    </div>
+  </div>
+
+  <!-- CONTACT POPUP -->
+  <div id="contact" class="popup" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+    <a class="popup-bg" href="#top" aria-label="Close" data-close></a>
+    <div class="popup-box">
+      <h2 id="contact-title">Contact us</h2>
+      <a href="mailto:hello@cutz.com">hello@cutz.com</a>
+      <a href="tel:+94701260865">070 126 0865</a>
+      <a href="https://wa.me/94701260865" target="_blank" rel="noopener">WhatsApp us</a>
+      <p>Chithra Lane, Colombo 5, Sri Lanka</p>
+      <a href="https://maps.app.goo.gl/W3DXGVLLJoRCRCmPA">Find us</a>
+
+      <div class="socials" aria-label="Follow CUTZ on social media">
+        <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+        <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+      </div>
+
+      <a class="popup-close" href="#top" data-close>Close</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-watermark" aria-hidden="true">CUTZ</div>
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img class="footer-logo" src="logo.png" alt="CUTZ by Quadrillion">
+        <p>We are a creative agency helping brands tell their story through powerful visuals and smart marketing.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Services</h3>
+        <ul class="footer-links">
+          <li><a href="#services">Social Media Management</a></li>
+          <li><a href="#services">Branding</a></li>
+          <li><a href="#services">Ads</a></li>
+          <li><a href="#services">Videography</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Follow us</h3>
+        <div class="socials" aria-label="Follow CUTZ on social media">
+          <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+          <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+          <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+        </div>
+
+        <h3 class="footer-title footer-title-gap">Get in touch</h3>
+        <ul class="footer-contact">
+          <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:hello@cutz.com">hello@cutz.com</a></li>
+          <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+94701260865">070 126 0865</a></li>
+          <li><svg class="icon"><use href="#i-pin"/></svg><a href="https://maps.app.goo.gl/W3DXGVLLJoRCRCmPA" target="_blank" rel="noopener">Chithra Lane, Colombo 5, Sri Lanka</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+
+      /* ==========================================================
+         1. MOBILE MENU
+         ========================================================== */
+      var header = document.getElementById('site-header');
+      var toggle = header.querySelector('.menu-toggle');
+
+      function setMenu(open) {
+        header.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      toggle.addEventListener('click', function () {
+        setMenu(!header.classList.contains('menu-open'));
+      });
+
+      header.querySelectorAll('nav a').forEach(function (link) {
+        link.addEventListener('click', function () { setMenu(false); });
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) setMenu(false);
+      });
+
+
+      /* ==========================================================
+         2. POPUPS  (About, Team, Work, Contact, Let's Talk)
+         Any link that points at a .popup (href="#about", "#team",
+         "#talk" ...) opens it. Anything with [data-close] closes it.
+         ========================================================== */
+      var popups = document.querySelectorAll('.popup');
+      var fName = document.getElementById('f-name');
+      var fEmail = document.getElementById('f-email');
+      var fPhone = document.getElementById('f-phone');
+      var fMessage = document.getElementById('f-message');
+      var form = document.getElementById('talk-form');
+
+      function closeAll() {
+        popups.forEach(function (p) { p.classList.remove('is-open'); });
+        document.body.classList.remove('modal-open');
+      }
+
+      function openPopup(id, service) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        closeAll();
+        el.classList.add('is-open');
+        document.body.classList.add('modal-open');
+        el.querySelector('.popup-box').scrollTop = 0;
+
+        if (id === 'talk') {
+          // Pre-fill the message when opened from a service card
+          if (service && !fMessage.value.trim()) {
+            fMessage.value = "I'm interested in " + service + ". ";
+          }
+          setTimeout(function () { fName.focus(); }, 50);
+        }
+      }
+
+      function closePopups() {
+        closeAll();
+        // If the page was opened with #about etc., clear it without jumping
+        var h = document.getElementById(location.hash.slice(1));
+        if (h && h.classList.contains('popup')) {
+          history.replaceState(null, '', location.pathname + location.search);
+        }
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        var id = a.getAttribute('href').slice(1);
+        var target = id ? document.getElementById(id) : null;
+        if (target && target.classList.contains('popup')) {
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            openPopup(id, a.getAttribute('data-service'));
+          });
+        }
+      });
+
+      document.querySelectorAll('[data-close]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          closePopups();
+        });
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          setMenu(false);
+          closePopups();
+        }
+      });
+
+      // If someone lands directly on a link like yoursite.com/#team
+      var landed = document.getElementById(location.hash.slice(1));
+      if (landed && landed.classList.contains('popup')) openPopup(landed.id);
+
+
+      /* ==========================================================
+         3. LET'S TALK FORM  ->  WhatsApp
+         ========================================================== */
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var lines = [
+          'Hello CUTZ! I would like to start a project.',
+          '',
+          'Name: ' + fName.value.trim(),
+          'Email: ' + fEmail.value.trim()
+        ];
+        if (fPhone.value.trim()) lines.push('Phone: ' + fPhone.value.trim());
+        lines.push('', 'Project details:', fMessage.value.trim());
+
+        var number = form.getAttribute('data-whatsapp');
+        var url = 'https://wa.me/' + number + '?text=' + encodeURIComponent(lines.join('\n'));
+
+        var win = window.open(url, '_blank', 'noopener');
+        if (!win) window.location.href = url; // popup blocked: open in same tab
+
+        form.reset();
+        closePopups();
+      });
+
+
+      /* ==========================================================
+         4. HERO ANIMATION
+         Pieces of hero-image.png fly in and assemble the scene.
+         x, y, w, h are in pixels of the source image (1774 x 887);
+         from = start transform, d = delay (s), t = duration (s).
+         ========================================================== */
+      var IW = 1774, IH = 887;
+      var PARTS = [
+        { x: 640,  y: 312, w: 480, h: 275, from: 'translate(-70%,10%) rotate(-6deg) scale(.9)',   d: .2,  t: .9 },
+        { x: 645,  y: 580, w: 510, h: 115, from: 'translate(0,150%) scale(.9)',                    d: .5,  t: .8 },
+        { x: 1075, y: 100, w: 455, h: 345, from: 'translate(0,28%) scale(.45)',                    d: .95, t: 1.0, pop: 1, origin: '50% 100%' },
+        { x: 1155, y: 382, w: 240, h: 235, from: 'translate(60%,-90%) rotate(10deg) scale(.8)',    d: 1.7, t: .8 },
+        { x: 1020, y: 436, w: 245, h: 178, from: 'translate(-110%,10%) rotate(-12deg) scale(.85)', d: 1.95, t: .8 },
+        { x: 1395, y: 486, w: 130, h: 168, from: 'translate(40%,110%) rotate(18deg)',              d: 2.2, t: .7 },
+        { x: 1485, y: 396, w: 115, h: 184, from: 'translate(0,-120%)',                             d: 2.35, t: .6 },
+        { x: 1510, y: 550, w: 264, h: 125, from: 'translate(120%,0) rotate(8deg)',                 d: 2.45, t: .7 },
+        { x: 1145, y: 660, w: 505, h: 160, from: 'translate(0,-260%) rotate(-14deg)',              d: 2.6, t: .85, bounce: 1 },
+        { x: 1495, y: 705, w: 279, h: 182, from: 'translate(40%,60%) rotate(6deg)',                d: 2.9, t: .7 },
+        { x: 1545, y: 20,  w: 175, h: 160, from: 'translate(0,-120%) scale(.8)',                   d: 3.1, t: .7 }
+      ];
+
+      var hero = document.getElementById('top');
+      var host = document.getElementById('pieces');
+      var base = document.getElementById('base');
+      var g1 = document.getElementById('g1');
+      var g2 = document.getElementById('g2');
+      var flash = document.getElementById('flash');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      var els = PARTS.map(function (p) {
+        var e = document.createElement('div');
+        e.className = 'piece';
+        Object.assign(e.style, {
+          left: p.x / IW * 100 + '%',
+          top: p.y / IH * 100 + '%',
+          width: p.w / IW * 100 + '%',
+          height: p.h / IH * 100 + '%',
+          backgroundSize: IW / p.w * 100 + '% ' + IH / p.h * 100 + '%',
+          backgroundPosition: (p.x / (IW - p.w) * 100) + '% ' + (p.y / (IH - p.h) * 100) + '%',
+          transformOrigin: p.origin || '50% 50%'
+        });
+        host.appendChild(e);
+        return e;
+      });
+
+      var anims = [];
+      function runHero() {
+        anims.forEach(function (a) { a.cancel(); });
+        anims = [];
+
+        function A(el, kf, o) {
+          var a = el.animate(kf, Object.assign({ fill: 'both' }, o));
+          anims.push(a);
+          return a;
+        }
+
+        base.style.filter = '';
+
+        // Reduced motion: show the finished picture straight away
+        if (reduce) {
+          base.style.filter = 'none';
+          g1.style.opacity = g2.style.opacity = 1;
+          return;
+        }
+
+        // Background brightens once the pieces have landed
+        A(base, [
+          { filter: 'brightness(.22) saturate(.8)' },
+          { filter: 'brightness(.22) saturate(.8)', offset: .78 },
+          { filter: 'brightness(1) saturate(1)' }
+        ], { duration: 4200, easing: 'ease-out' });
+
+        // Each piece flies in
+        PARTS.forEach(function (p, i) {
+          var ease = p.pop ? 'cubic-bezier(.2,1.5,.4,1)' : 'cubic-bezier(.22,1.25,.36,1)';
+          A(els[i], [
+            { transform: p.from, opacity: 0, filter: 'brightness(2.2)' },
+            { opacity: 1, offset: .35 },
+            { transform: 'none', opacity: 1, filter: 'brightness(1)' }
+          ], { duration: p.t * 1000, delay: p.d * 1000, easing: ease });
+        });
+
+        // Flash when the camera locks together
+        A(flash, [
+          { opacity: 0, transform: 'scale(.3)' },
+          { opacity: .9, transform: 'scale(1)', offset: .3 },
+          { opacity: 0, transform: 'scale(1.4)' }
+        ], { duration: 700, delay: 2750 });
+
+        // Screen + spotlight glow switch on at the end
+        A(g1, [{ opacity: 0 }, { opacity: 1 }], { duration: 900, delay: 3300 });
+        A(g2, [{ opacity: 0 }, { opacity: 1 }], { duration: 900, delay: 3300 });
+      }
+
+      // Floating dust particles
+      var canvas = document.getElementById('dust');
+      var ctx = canvas.getContext('2d');
+      var W = 0, H = 0;
+      var heroVisible = true;
+
+      function resizeCanvas() {
+        var r = canvas.getBoundingClientRect();
+        var dpr = window.devicePixelRatio || 1;
+        W = canvas.width = r.width * dpr;
+        H = canvas.height = r.height * dpr;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      var dust = [];
+      for (var i = 0; i < 60; i++) {
+        dust.push({
+          x: Math.random(),
+          y: Math.random(),
+          r: Math.random() * 1.8 + .4,
+          vx: (Math.random() - .3) * .00015,
+          vy: -Math.random() * .0003 - .00005,
+          a: Math.random() * 6
+        });
+      }
+
+      function drawDust() {
+        requestAnimationFrame(drawDust);
+        if (!heroVisible) return; // saves battery when the hero is off-screen
+        ctx.clearRect(0, 0, W, H);
+        if (reduce) return;
+        var dpr = window.devicePixelRatio || 1;
+        dust.forEach(function (p) {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.a += .02;
+          if (p.y < -.02) { p.y = 1.02; p.x = Math.random(); }
+          if (p.x > 1.02) p.x = -.02;
+          ctx.beginPath();
+          ctx.fillStyle = 'rgba(255,170,80,' + (.12 + .3 * Math.abs(Math.sin(p.a))) * (p.x > .5 ? 1 : .3) + ')';
+          ctx.arc(p.x * W, p.y * H, p.r * dpr, 0, 7);
+          ctx.fill();
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          heroVisible = entries[0].isIntersecting;
+        }).observe(hero);
+      }
+
+      drawDust();
+      runHero();
+
+    })();
+  </script>
+
+</body>
+</html>
