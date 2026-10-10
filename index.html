@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUTZ by Quadrillion</title>
+  <meta name="description" content="CUTZ is a creative digital agency helping brands grow through creativity and digital marketing.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="CUTZ by Quadrillion | Creative Digital Agency">
+  <meta property="og:description" content="We create. You grow. Social media management, branding, ads and videography.">
+  <meta property="og:image" content="hero-image.png">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ICON SPRITE (defined once, reused below) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <!-- Socials -->
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+    </symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="none" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+    </symbol>
+
+    <!-- Services -->
+    <symbol id="i-social" viewBox="0 0 24 24">
+      <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>
+      <path d="M12 8.5v6M9 11.5h6"/>
+    </symbol>
+    <symbol id="i-branding" viewBox="0 0 24 24">
+      <circle cx="13.5" cy="6.5" r="1"/>
+      <circle cx="17.5" cy="10.5" r="1"/>
+      <circle cx="8.5" cy="7.5" r="1"/>
+      <circle cx="6.5" cy="12.5" r="1"/>
+      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16c3.3 0 6-2.7 6-6 0-4.9-4.5-8.8-10-8.8z"/>
+    </symbol>
+    <symbol id="i-ads" viewBox="0 0 24 24">
+      <path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+      <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+    </symbol>
+    <symbol id="i-video" viewBox="0 0 24 24">
+      <rect x="2" y="6" width="14" height="12" rx="2"/>
+      <path d="M22 8l-6 4 6 4z"/>
+    </symbol>
+
+    <!-- UI -->
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 17L17 7M8 7h9v9"/>
+    </symbol>
+    <symbol id="i-send" viewBox="0 0 24 24">
+      <path d="M22 2L11 13"/>
+      <path d="M22 2l-7 20-4-9-9-4z"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M22 7l-10 6L2 7"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a class="logo" href="#top" aria-label="CUTZ by Quadrillion home">
+      <img src="logo.png" alt="CUTZ by Quadrillion">
+    </a>
+
+    <!-- Mobile menu button (hidden on desktop) -->
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+
+    <nav id="main-nav" aria-label="Main">
+      <ul>
+        <li class="mobile-only"><a href="#top" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta">
+          <a class="btn" href="#talk" data-open-talk>Let&rsquo;s Talk <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero" id="top">
+    <h1>WE CREATE.</h1>
+    <h1>YOU GROW.</h1>
+    <p>CUTZ is a creative digital agency helping brands grow through creativity and digital marketing.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#talk" data-open-talk>Start a project</a>
+      <a class="btn btn-outline" href="#services">Our services</a>
+    </div>
+
+    <!-- Social links (replace the @yourpage URLs with your real pages) -->
+    <div class="socials hero-socials" aria-label="Follow CUTZ on social media">
+      <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+      <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+      <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+      <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+    </div>
+  </main>
+
+  <!-- SERVICES (on-page section with cards) -->
+  <section id="services" class="section services">
+    <div class="section-inner">
+      <h2>Our services</h2>
+      <p class="section-intro">Everything your brand needs to get noticed and keep growing.</p>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-social"/></svg></div>
+          <h3>Social Media Management</h3>
+          <p>Content, scheduling and community care that keep your pages active and growing.</p>
+          <a class="card-link" href="#talk" data-open-talk data-service="Social Media Management">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-branding"/></svg></div>
+          <h3>Branding</h3>
+          <p>Logos, visual identity and guidelines that make your brand easy to remember.</p>
+          <a class="card-link" href="#talk" data-open-talk data-service="Branding">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-ads"/></svg></div>
+          <h3>Ads</h3>
+          <p>Targeted paid campaigns that turn reach into enquiries and sales.</p>
+          <a class="card-link" href="#talk" data-open-talk data-service="Ads">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><svg class="icon"><use href="#i-video"/></svg></div>
+          <h3>Videography</h3>
+          <p>Cinematic videos and reels that bring your ideas to life.</p>
+          <a class="card-link" href="#talk" data-open-talk data-service="Videography">View Packages <svg class="icon icon-sm"><use href="#i-arrow"/></svg></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LET'S TALK BAR (sits right before the footer) -->
+  <section class="talk-section" aria-labelledby="talk-title">
+    <div class="talk-bar">
+      <span class="talk-brush" aria-hidden="true"></span>
+
+      <h2 class="talk-title" id="talk-title">
+        Let&rsquo;s Create Something<br>
+        Extraordinary
+        <span class="talk-accent">
+          <span class="talk-accent-text">Together.</span>
+          <svg class="talk-underline" viewBox="0 0 180 12" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8 C 50 3, 115 3, 170 6 C 177 7, 180 9, 174 10"/>
+          </svg>
+        </span>
+      </h2>
+
+      <!-- Hand-drawn curve pointing to the button (desktop only) -->
+      <svg class="talk-curve" viewBox="0 0 1050 228" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M2 176 C 4 192, 24 200, 94 198 C 330 192, 520 160, 572 118 C 582 108, 620 108, 680 108 C 800 110, 940 122, 1046 126"/>
+        <path d="M1034 119 L1047 126 L1034 133"/>
+      </svg>
+
+      <a class="talk-btn" href="#talk" data-open-talk>
+        <span>Let&rsquo;s Talk</span>
+        <span class="talk-btn-icon"><svg class="icon icon-sm"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- LET'S TALK FORM (sends the message to WhatsApp) -->
+  <div id="talk" class="popup" role="dialog" aria-modal="true" aria-labelledby="talk-modal-title">
+    <div class="popup-bg" data-close-talk></div>
+    <div class="popup-box talk-box">
+      <button class="modal-close" type="button" aria-label="Close" data-close-talk>
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+
+      <h2 id="talk-modal-title">Let&rsquo;s Talk</h2>
+      <p class="talk-sub">Tell us a bit about your project and we&rsquo;ll be in touch.</p>
+
+      <!-- Change the WhatsApp number here (country code first, no + or spaces) -->
+      <form id="talk-form" class="talk-form" data-whatsapp="94701260865">
+        <label class="sr-only" for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+
+        <label class="sr-only" for="f-email">Your email</label>
+        <input id="f-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+
+        <label class="sr-only" for="f-phone">Phone (optional)</label>
+        <input id="f-phone" name="phone" type="tel" placeholder="Phone (optional)" autocomplete="tel">
+
+        <label class="sr-only" for="f-message">What are you looking to create?</label>
+        <textarea id="f-message" name="message" rows="4" placeholder="What are you looking to create?" required></textarea>
+
+        <button class="btn send-btn" type="submit">Send Message <svg class="icon icon-sm"><use href="#i-send"/></svg></button>
+        <small class="talk-note">This opens WhatsApp with your message ready to send.</small>
+      </form>
+    </div>
+  </div>
+
+  <!-- ABOUT POPUP -->
+  <div id="about" class="popup">
+    <a class="popup-bg" href="#top" aria-label="Close"></a>
+    <div class="popup-box">
+      <h2>About CUTZ</h2>
+      <p>CUTZ is a creative digital agency by Quadrillion. We help brands stand out and grow through strong creative work and smart digital marketing.</p>
+      <p>Our team brings design, content and marketing together, so every campaign looks sharp and delivers results.</p>
+      <a class="popup-close" href="#top">Close</a>
+    </div>
+  </div>
+
+  <!-- WORK POPUP -->
+  <div id="work" class="popup">
+    <a class="popup-bg" href="#top" aria-label="Close"></a>
+    <div class="popup-box">
+      <h2>Our work</h2>
+      <div class="popup-item">
+        <h3>Project name one</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <div class="popup-item">
+        <h3>Project name two</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <div class="popup-item">
+        <h3>Project name three</h3>
+        <p>Short line about what you did and the result.</p>
+      </div>
+      <a class="popup-close" href="#top">Close</a>
+    </div>
+  </div>
+
+  <!-- CONTACT POPUP -->
+  <div id="contact" class="popup">
+    <a class="popup-bg" href="#top" aria-label="Close"></a>
+    <div class="popup-box">
+      <h2>Contact us</h2>
+      <a href="mailto:hello@cutz.com">hello@cutz.com</a>
+      <a href="tel:+94701260865">070 126 0865</a>
+      <a href="https://wa.me/94701260865" target="_blank" rel="noopener">WhatsApp us</a>
+      <p>Chithra Lane, Colombo 5, Sri Lanka</p>
+      <a href="https://maps.app.goo.gl/W3DXGVLLJoRCRCmPA">Find us</a>
+
+      <div class="socials" aria-label="Follow CUTZ on social media">
+        <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+        <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+      </div>
+
+      <a class="popup-close" href="#top">Close</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-watermark" aria-hidden="true">CUTZ</div>
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img class="footer-logo" src="logo.png" alt="CUTZ by Quadrillion">
+        <p>We are a creative agency helping brands tell their story through powerful visuals and smart marketing.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Services</h3>
+        <ul class="footer-links">
+          <li><a href="#services">Social Media Management</a></li>
+          <li><a href="#services">Branding</a></li>
+          <li><a href="#services">Ads</a></li>
+          <li><a href="#services">Videography</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Follow us</h3>
+        <div class="socials" aria-label="Follow CUTZ on social media">
+          <a href="https://www.instagram.com/cu_tz_?rpxt=djVzOHpjbmJheG14" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+          <a href="https://www.facebook.com/share/1JopWFuj9c/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+          <a href="https://www.youtube.com/@yourpage" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"/></svg></a>
+        </div>
+
+        <h3 class="footer-title footer-title-gap">Get in touch</h3>
+        <ul class="footer-contact">
+          <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:hello@cutz.com">hello@cutz.com</a></li>
+          <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+94701260865">070 126 0865</a></li>
+          <li><svg class="icon"><use href="#i-pin"/></svg><a href="https://maps.app.goo.gl/W3DXGVLLJoRCRCmPA" target="_blank" rel="noopener">Chithra Lane, Colombo 5, Sri Lanka</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <small>&copy; 2026 CUTZ by Quadrillion. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      /* ---------- Mobile menu ---------- */
+      var header = document.getElementById('site-header');
+      var toggle = header.querySelector('.menu-toggle');
+
+      function setMenu(open) {
+        header.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      toggle.addEventListener('click', function () {
+        setMenu(!header.classList.contains('menu-open'));
+      });
+
+      header.querySelectorAll('nav a').forEach(function (link) {
+        link.addEventListener('click', function () { setMenu(false); });
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) setMenu(false);
+      });
+
+      /* ---------- Let's Talk modal + WhatsApp ---------- */
+      var modal = document.getElementById('talk');
+      var form = document.getElementById('talk-form');
+      var fName = document.getElementById('f-name');
+      var fEmail = document.getElementById('f-email');
+      var fPhone = document.getElementById('f-phone');
+      var fMessage = document.getElementById('f-message');
+
+      function openTalk(service) {
+        modal.classList.add('is-open');
+        document.body.classList.add('modal-open');
+        // Pre-fill the message when opened from a service card
+        if (service && !fMessage.value.trim()) {
+          fMessage.value = "I'm interested in " + service + ". ";
+        }
+        setTimeout(function () { fName.focus(); }, 50);
+      }
+
+      function closeTalk() {
+        modal.classList.remove('is-open');
+        document.body.classList.remove('modal-open');
+        if (location.hash === '#talk') {
+          history.replaceState(null, '', location.pathname + location.search);
+        }
+      }
+
+      document.querySelectorAll('[data-open-talk]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          openTalk(el.getAttribute('data-service'));
+        });
+      });
+
+      modal.querySelectorAll('[data-close-talk]').forEach(function (el) {
+        el.addEventListener('click', closeTalk);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          setMenu(false);
+          closeTalk();
+        }
+      });
+
+      // If someone lands directly on #talk
+      if (location.hash === '#talk') openTalk();
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var lines = [
+          'Hello CUTZ! I would like to start a project.',
+          '',
+          'Name: ' + fName.value.trim(),
+          'Email: ' + fEmail.value.trim()
+        ];
+        if (fPhone.value.trim()) lines.push('Phone: ' + fPhone.value.trim());
+        lines.push('', 'Project details:', fMessage.value.trim());
+
+        var number = form.getAttribute('data-whatsapp');
+        var url = 'https://wa.me/' + number + '?text=' + encodeURIComponent(lines.join('\n'));
+
+        var win = window.open(url, '_blank', 'noopener');
+        if (!win) window.location.href = url; // popup blocked: open in same tab
+
+        form.reset();
+        closeTalk();
+      });
+    })();
+  </script>
+
+</body>
+</html>
