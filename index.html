@@ -238,8 +238,8 @@
         <label class="sr-only" for="f-name">Your name</label>
         <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
 
-        <label class="sr-only" for="f-email">Your email</label>
-        <input id="f-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+        <label class="sr-only" for="f-gmail">Your gmail</label>
+        <input id="f-gmail" name="gmail" type="gmail" placeholder="Your gmail" autocomplete="gmail" required>
 
         <label class="sr-only" for="f-phone">Phone (optional)</label>
         <input id="f-phone" name="phone" type="tel" placeholder="Phone (optional)" autocomplete="tel">
@@ -682,13 +682,13 @@
           <div class="sq-field"><label for="sq-name">Your name</label><input id="sq-name" autocomplete="name"></div>
           <div class="sq-row">
             <div class="sq-field"><label for="sq-phone">Phone / WhatsApp</label><input id="sq-phone" type="tel" autocomplete="tel" placeholder="+94 7X XXX XXXX"></div>
-            <div class="sq-field"><label for="sq-email">Email (optional)</label><input id="sq-email" type="email" autocomplete="email"></div>
+            <div class="sq-field"><label for="sq-gmail">gmail (optional)</label><input id="sq-gmail" type="gmail" autocomplete="gmail"></div>
           </div>
           <div class="sq-field"><span class="sq-label" id="sq-type-l">What do you need? <small>(tap all that apply)</small></span><div class="sq-chips" id="sq-type" role="group" aria-labelledby="sq-type-l"></div></div>
           <div class="sq-field"><label for="sq-msg">Tell us a little more</label><textarea id="sq-msg" placeholder="Date, location, how many items, any ideas you have..."></textarea></div>
           <div class="sq-actions">
             <button type="button" class="sq-send" id="sq-wa">Send on WhatsApp</button>
-            <button type="button" class="sq-mail" id="sq-mail">Send by email</button>
+            <button type="button" class="sq-mail" id="sq-mail">Send by gmail</button>
           </div>
           <p class="sq-status" id="sq-status" role="status"></p>
         </div>
@@ -742,7 +742,7 @@
          ========================================================== */
       var popups = document.querySelectorAll('.popup');
       var fName = document.getElementById('f-name');
-      var fEmail = document.getElementById('f-email');
+      var fgmail = document.getElementById('f-gmail');
       var fPhone = document.getElementById('f-phone');
       var fMessage = document.getElementById('f-message');
       var form = document.getElementById('talk-form');
@@ -818,7 +818,7 @@
           'Hello CUTZ! I would like to start a project.',
           '',
           'Name: ' + fName.value.trim(),
-          'Email: ' + fEmail.value.trim()
+          'gmail: ' + fgmail.value.trim()
         ];
         if (fPhone.value.trim()) lines.push('Phone: ' + fPhone.value.trim());
         lines.push('', 'Project details:', fMessage.value.trim());
@@ -997,7 +997,7 @@
       'use strict';
 
       /* ---------- STEP 1: where quote requests go ---------- */
-      var CONTACT = { whatsapp: '94701260865', email: 'madebycutz@gmail.com' };
+      var CONTACT = { whatsapp: '94701260865', gmail: 'madebycutz@gmail.com' };
 
       /* ---------- STEP 2: LOGOS (Branding page) ----------
          logo = your logo file, bg = the colour behind it
@@ -1267,7 +1267,7 @@
           'Hello CUTZ! I would like a quote for ' + TYPES[sqKey].service + (sqTypes().length ? ': ' + sqTypes().join(', ') : '') + '.',
           '', 'Name: ' + v('#sq-name'), 'Phone: ' + v('#sq-phone')
         ];
-        if (v('#sq-email')) lines.push('Email: ' + v('#sq-email'));
+        if (v('#sq-gmail')) lines.push('gmail: ' + v('#sq-gmail'));
         if (v('#sq-msg')) lines.push('', 'Details:', v('#sq-msg'));
         return lines.join('\n');
       }
@@ -1288,10 +1288,10 @@
       });
       $('#sq-mail').addEventListener('click', function () {
         if (!sqValid()) return;
-        window.location.href = 'mailto:' + CONTACT.email +
+        window.location.href = 'mailto:' + CONTACT.gmail +
           '?subject=' + encodeURIComponent('Quote request: ' + TYPES[sqKey].service + (sqTypes().length ? ' - ' + sqTypes().join(', ') : '')) +
           '&body=' + encodeURIComponent(sqMessage());
-        $('#sq-status').textContent = 'Opening your email app. Press send there and we will reply soon.';
+        $('#sq-status').textContent = 'Opening your gmail app. Press send there and we will reply soon.';
       });
 
       /* ---------- keyboard ---------- */
